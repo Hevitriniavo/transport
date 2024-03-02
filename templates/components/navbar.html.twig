@@ -1,0 +1,47 @@
+<nav class="bg-gray-800">
+    <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center">
+                <img src="https://img.freepik.com/vecteurs-premium/modele-conception-logo-voiture-luxe_681147-325.jpg?w=360" alt="logo" class="h-10">
+                <a href="#" class="text-white ml-2 text-lg font-semibold">TansAmbala</a>
+            </div>
+            <div class="hidden md:flex md:items-center md:space-x-4">
+                <a href="#" class="text-gray-300 hover:text-white">Accueil</a>
+                <a href="#" class="text-gray-300 hover:text-white">Service</a>
+                <a href="#" class="text-gray-300 hover:text-white">Information</a>
+                <a href="#" class="text-gray-300 hover:text-white">Aide</a>
+                <a href="#" class="text-gray-300 hover:text-white">Contact</a>
+            </div>
+            <div class="flex items-center relative">
+                <img src="{{ asset("images/img.png") }}" alt="logo" class="inline-block h-10 w-10 rounded-full ring-2 ring-white object-cover my-1">
+                <div class="ml-2 relative">
+                    <button id="dropdown-btn" class="text-white focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="dropdown-menu" class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg hidden">
+                        <a href="#" class="block px-4 py-2 text-gray-800 bg-gray-200 hover:bg-gray-300">Profil</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 bg-gray-200 hover:bg-gray-300">Déconnexion</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="responsive-menu" class="flex flex-col items-center justify-center hidden md:hidden z-max">
+            <a href="#" class="block text-gray-300 hover:text-white py-1">Accueil</a>
+            <a href="#" class="block text-gray-300 hover:text-white py-1">Service</a>
+            <a href="#" class="block text-gray-300 hover:text-white py-1">Information</a>
+            <a href="#" class="block text-gray-300 hover:text-white py-1">Aide</a>
+            <a href="#" class="block text-gray-300 hover:text-white py-1">Contact</a>
+        </div>
+    </div>
+</nav>
